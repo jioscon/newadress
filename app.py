@@ -30,8 +30,8 @@ newAddressListAreaCd = root.findall("newAddressListAreaCd")
 
 print('=============== 결과 출력 =======================')
 
-for i in newAddressListAreaCd:
-    print(f'우편번호 : {i.findtext("zipNo")}')
-    print(f'도로명 주소 : {i.findtext("lnmAdres")}')
-    print(f'지번 주소 : {i.findtext("rnAdres")}')
+for r in newAddressListAreaCd:
+    print(f'우편번호 : {r.findtext("zipNo")}')
+    print(f'도로명 주소 : {r.findtext("lnmAdres")}')
+    print(f'지번 주소 : {r.findtext("rnAdres")}')
     print('--------------------------------------------------------------------')
